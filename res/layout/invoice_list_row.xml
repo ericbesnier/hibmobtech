@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/invoiceListRowLinearLayout"
+    android:background="@color/md_white_1000"
+    android:orientation="horizontal"
+    android:layout_marginBottom="1px"
+    android:padding="10dp"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:id="@+id/invoiceListRowLeftVerticalLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1.1"
+        android:paddingBottom="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/invoiceListRowTitleIdTextView"
+                android:layout_height="wrap_content"
+                android:text="Id"
+                android:textSize="14sp"
+                android:layout_width="60dp"
+                android:gravity="right" />
+
+            <TextView
+                android:id="@+id/invoiceListRowIdTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="001"
+                android:textColor="@color/md_black_1000"
+                android:textSize="16sp"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/invoiceListRowTitleNumberTextView"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Numéro"
+                android:textSize="14sp"
+                android:gravity="right" />
+            <TextView
+                android:id="@+id/invoiceListRowNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000100"
+                android:textColor="@color/md_black_1000"
+                android:textSize="16sp"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/invoiceListRowTitleStateTextView"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Etat"
+                android:textSize="14sp"
+                android:gravity="right" />
+            <ImageView
+                android:id="@+id/invoiceListRowStateImageViewIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invoiceListRowRightVerticalLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.9"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:id="@+id/invoiceListRowTitleIssuedDateTextView"
+                android:layout_height="wrap_content"
+                android:text="Émise le"
+                android:textSize="14sp"
+                android:layout_width="70dp"
+                android:gravity="right" />
+            <TextView
+                android:id="@+id/invoiceListRowIssuedDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="22/11/2016"
+                android:textColor="@color/md_black_1000"
+                android:textSize="16sp"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/invoiceListRowTitleAmountTextView"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Montant"
+                android:textSize="14sp"
+                android:gravity="right" />
+            <TextView
+                android:id="@+id/invoiceListRowAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1540,00€"
+                android:textColor="@color/md_black_1000"
+                android:textSize="16sp"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/invoiceListRowTitlePaidDateTextView"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Réglée le"
+                android:textSize="14sp"
+                android:gravity="right" />
+            <TextView
+                android:id="@+id/invoiceListRowPaidDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="14/11/2017"
+                android:textColor="@color/md_black_1000"
+                android:textSize="16sp"
+                android:paddingLeft="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

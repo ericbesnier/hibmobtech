@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mapActivityCoordinatorLayout"
+    android:background="@color/md_red_200"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <fragment
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/map"
+            tools:context="com.hibernatus.hibmobtech.map.MapActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+        <CheckBox
+            android:text="Interventions ouvertes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginBottom="9dp"
+            android:id="@+id/checkBox"
+            android:buttonTint="@color/get_opened"
+            android:layout_alignParentBottom="false"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <!-- F o o t e r -->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/mapActivityBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_blue_grey_600"
+        android:fillViewport="true"
+        app:anchorPoint="@dimen/anchor_point"
+        app:layout_behavior="com.hibernatus.hibmobtech.bottomsheet.HibmobtechBottomSheet"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@color/md_blue_grey_200"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/mapActivityBottomSheetTextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Interventions"
+                android:background="@color/edit_button"
+                android:paddingLeft="80dp"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:gravity="center_vertical" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mapActivityBottomSheetListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/md_white_1000"
+                android:fadeScrollbars="false"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+<!--    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/mapActivityBottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_blue_grey_600"
+        android:fillViewport="true"
+        app:anchorPoint="@dimen/anchor_point"
+        app:layout_behavior="com.hibernatus.hibmobtech.custombottomsheetbehavior.BottomSheetBehaviorGoogleMapsLike"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="@color/md_blue_grey_200"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/mapActivityBottomSheetTextView"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Interventions"
+                android:background="@color/edit_button"
+                android:paddingLeft="80dp"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:gravity="center_vertical" />
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mapActivityBottomSheetListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/md_white_1000"
+                android:fadeScrollbars="false"
+                android:scrollbarStyle="insideOverlay"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                android:scrollbars="vertical" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>-->
+</android.support.design.widget.CoordinatorLayout>
+

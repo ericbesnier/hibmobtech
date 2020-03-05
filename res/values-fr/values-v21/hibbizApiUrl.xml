@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_hibbizApiUrl_entries">
+        <item>Emulator</item>
+        <item>ViaoEric@Guido</item>
+        <item>Cuvier@Guido</item>
+        <item>Cuvier@Barbeau</item>
+        <item>Prod Amazon</item>
+    </string-array>
+    <string-array name="pref_hibbizApiUrl_values">
+        <item>http://10.0.2.2:9080</item>
+        <item>http://192.168.56.1:9080</item>
+        <item>http://192.168.1.60:9080</item>
+        <item>http://192.168.0.18:9080</item>
+        <item>http://54.76.141.176:8080</item>
+    </string-array>
+</resources>
+

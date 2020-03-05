@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mroRequestListFullRowLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<!--    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/md_purple_300"/>-->
+
+    <include layout="@layout/mro_request_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:background="@color/md_grey_100"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/mroRequestMachineListRow"
+            layout="@layout/machine_list_row" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mroRequestListRowSymptomLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/mroRequestListRowSymptomTitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:padding="2dp"
+            android:text="Symptomes"
+            android:textColor="@color/md_black_1000"
+            android:textSize="22sp" />
+        <TextView
+            android:id="@+id/mroRequestListRowSymptomTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="2dp"
+            android:text="Symptomes..."
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>
+

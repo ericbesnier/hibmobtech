@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="oui_non">Oui/Non</string>
+    <string name="tracking_non">tracking : Non</string>
+    <string name="tracking_on">Tracking On</string>
+    <string name="exit">Exit</string>
+    <string name="mro_request_detail">Détail de l\'intervention</string>
+    <string name="mro_request_signature">Signature du client</string>
+    <string name="search_causes">Chercher causes...</string>
+    <string name="search_tasks">Chercher travaux...</string>
+    <string name="fiche_intervention">Fiche d\'intervention</string>
+    <string name="search_spare_part">Chercher pièce détachée...</string>
+    <string name="map">Carte</string>
+    <string name="pictures">Pictures</string>
+</resources>

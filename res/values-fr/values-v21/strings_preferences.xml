@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Préférences</string>
+    <string name="title_activity_settings">Préférences</string>
+    <string name="pref_hibbizApiUrl">URL de l\'api hibbiz</string>
+    <string name="pref_hibbizApiUrl_default">http://54.76.141.176:8080</string>
+
+    <string name="pref_clearDataStorageKey">pref_clearDataStorageKey</string>
+    <string name="pref_clearDataStorage">Effacer les données locales</string>
+    <string name="pref_clearDataStorageSummary">Efface les données stockées sur l\'appareil (login et mot de passe).</string>
+
+    <string name="pref_clearCookiesKey">pref_clearCookiesKey</string>
+    <string name="pref_clearCookies">Effacer les cookies</string>
+    <string name="pref_clearCookiesSummary">Efface les cookies stockés sur l\'appareil.</string>
+
+</resources>

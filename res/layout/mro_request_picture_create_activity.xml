@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/hibmobAppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/hibmobToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_grey_100"
+        android:layout_marginLeft="0dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mroRequestPictureCreateImageView"
+                android:layout_gravity="center_horizontal" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/mroRequestPictureCreateActivityTitleEditText"
+                android:textAppearance="@android:style/TextAppearance.Material.Widget.EditText"
+                android:textColor="@android:color/tertiary_text_light"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:maxLength="200"
+                android:hint="Saisir votre commentaire"
+                android:allowUndo="false"
+                android:scrollIndicators="right" />
+<!--            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:id="@+id/mroRequestPictureCreateActivityDescriptionEditText"
+                android:textAppearance="@android:style/TextAppearance.Material.Widget.EditText"
+                android:textColor="@android:color/tertiary_text_light"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textCapSentences|textAutoCorrect|textMultiLine"
+                android:maxLength="200"
+                android:hint="Description"
+                android:allowUndo="false"
+                android:scrollIndicators="right" />-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+

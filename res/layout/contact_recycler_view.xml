@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/md_purple_300"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_white_1000"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/contactRecyclerViewCategoryTextView"
+                android:text="@string/category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="26sp"
+                android:textColor="@color/md_black_1000"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+            <TextView
+                android:id="@+id/contactRecyclerViewAdress1TextView"
+                android:text="@string/adress1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contactRecyclerViewCategoryTextView"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="5dp" />
+            <TextView
+                android:id="@+id/contactRecyclerViewAdress2TextView"
+                android:text="@string/adress2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contactRecyclerViewAdress1TextView"
+                android:textSize="16sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginBottom="10dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:background="@color/md_grey_100"/>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/contactRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/md_grey_100"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </LinearLayout>
+</LinearLayout>

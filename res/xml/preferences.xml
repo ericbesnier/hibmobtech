@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:key="pref_hibbizApiUrl"
+        android:summary="%s"
+        android:title="@string/pref_hibbizApiUrl"
+        android:dialogTitle="@string/pref_hibbizApiUrl"
+        android:entries="@array/pref_hibbizApiUrl_entries"
+        android:entryValues="@array/pref_hibbizApiUrl_values"
+        android:defaultValue="@string/pref_hibbizApiUrl_default" />
+
+    <Preference android:title="@string/pref_clearCookies"
+        android:key="@string/pref_clearCookiesKey"
+        android:summary="@string/pref_clearCookiesSummary">
+    </Preference>
+
+    <Preference android:title="@string/pref_clearDataStorage"
+        android:key="@string/pref_clearDataStorageKey"
+        android:summary="@string/pref_clearDataStorageSummary"/>
+
+
+</PreferenceScreen>

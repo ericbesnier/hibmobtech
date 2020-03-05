@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mroRequestHeaderLinearLayout1"
+    android:background="@color/md_white_1000"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/mroRequestHeaderDateLinearLayout"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <TextView
+            android:id="@+id/mroRequestHeaderOperationDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22 janv. 2016"
+            android:textSize="20sp"
+            android:layout_gravity="center|right"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:id="@+id/icon_fa_info_circle"
+            android:text="@string/icon_fa_info_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:textSize="20sp"
+            android:layout_gravity="center|right"
+            android:layout_weight="2" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="No "
+            android:textSize="20sp"
+            android:layout_gravity="center|right"
+            android:layout_weight="2" />
+        <TextView
+            android:id="@+id/mroRequestReferenceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:text="1234567"
+            android:textColor="@color/md_black_1000"
+            android:textSize="20sp"
+            android:layout_gravity="center|right" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mroRequestHeaderLinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:orientation="vertical" >
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mroRequestHeaderLinearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="0dp"
+            android:background="@color/md_white_1000"
+            android:fitsSystemWindows="true"
+            android:orientation="vertical"
+            android:paddingLeft="4dp"
+            android:paddingRight="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:orientation="horizontal"
+                android:background="@color/md_white_1000"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/mroRequestSiteNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:background="@color/md_white_1000"
+                    android:paddingLeft="10dp"
+                    android:singleLine="false"
+                    android:text="CENTRE HOSP RENE DUBOS"
+                    android:textColor="@color/md_black_1000"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/mroRequestWarningInvoiceImageViewIconError"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1.9"
+                    android:background="@color/md_white_1000"
+                    android:paddingLeft="10dp"
+                    android:singleLine="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/md_white_1000"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mroRequestSiteAdress1TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="5"
+                    android:text="Adresse"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/mroRequestSiteAdress2TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginStart="10dp"
+                    android:text="Adresse"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

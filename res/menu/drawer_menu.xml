@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeItemDrawerMenu"
+        android:icon="@mipmap/ic_hiblogo"
+        android:title="Accueil" />
+    <item
+        android:id="@+id/aboutItemDrawerMenu"
+        android:icon="@mipmap/ic_question_mark"
+        android:title="A propos" />
+    <item android:title="Scanner">
+        <menu>
+            <item
+                android:id="@+id/barcode_scanner"
+                android:icon="@mipmap/ic_flashcode"
+                android:title="Flashcode machine" />
+        </menu>
+    </item>
+    <item android:title="@string/connection">
+<!--        <menu>
+            <item
+                android:id="@+id/logoutItemDrawerMenu"
+                android:icon="@mipmap/ic_logout"
+                android:title="Déconnection" />
+            <item android:id="@+id/trackingNavSwitch"
+                android:title="Repérage GPS"
+                app:actionLayout="@layout/action_view_switch" />
+        </menu>-->
+        <menu>
+            <item
+                android:id="@+id/logoutItemDrawerMenu"
+                android:icon="@mipmap/ic_logout"
+                android:title="Déconnection" />
+        </menu>
+    </item>
+
+    <item android:title="@string/personnel">
+        <menu>
+            <item
+                android:id="@+id/settingItemDrawerMenu"
+                android:icon="@mipmap/ic_preference"
+                android:title="Préférences" />
+        </menu>
+    </item>
+</menu>
+

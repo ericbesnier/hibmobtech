@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_marginBottom="1dp"
+    android:background="@color/md_white_1000">
+
+    <ImageView
+        android:id="@+id/equipmentListRowAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerVertical="true"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:orientation="vertical"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/equipmentListRowReferenceTextView"
+            android:text="@string/reference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/md_black_1000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/equipmentListRowCategoryTextView"
+            android:text="@string/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/equipmentListRowReferenceTextView"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/equipmentListRowBrandTextView"
+            android:text="@string/brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/equipmentListRowCategoryTextView"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/equipmentListRowPriceTextView"
+            android:text="@string/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_alignBaseline="@+id/equipmentListRowBrandTextView"
+            android:layout_alignBottom="@+id/equipmentListRowBrandTextView"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>
+

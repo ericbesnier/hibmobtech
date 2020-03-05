@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="SITE_MAP_FILTER">"com.hibernatus.hibmobtech.SITE_MAP"</string>
+    <string name="MRO_REQUEST_SEARCH_CAUSE_FILTER">"com.hibernatus.hibmobtech.MRO_REQUEST_SEARCH_CAUSE"</string>
+</resources>

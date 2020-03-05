@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mroRequestSearchSparePartRowLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+        <TextView
+            android:id="@+id/mroRequestSearchSparePartRowDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:padding="10dp"
+            android:layout_weight="5" />
+<!--        <TextView
+            android:id="@+id/mroRequestSearchSparePartRowQuantityTitleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qté"
+            android:padding="10dp"
+            android:layout_weight="1" />-->
+        <EditText
+            android:id="@+id/mroRequestSearchSparePartRowEditText"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:ellipsize="start"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            android:imeOptions="actionDone"
+            android:numeric="integer"
+            android:maxLength="2"
+            android:inputType="number"
+            android:hint=""
+            android:textAppearance="@android:style/TextAppearance.Material.Widget.TextView" />
+        <TextView
+            android:id="@+id/icon_fa_cross"
+            android:text="@string/icon_fa_times"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="16sp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/md_blue_grey_50"
+            android:clickable="true" />
+</LinearLayout>

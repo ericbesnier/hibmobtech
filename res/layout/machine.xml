@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/machineMainLinearLayout"
+    android:background="@color/md_white_1000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_grey_200"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/machineAvatarImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:layout_gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/machineCategoryTextView"
+            android:layout_height="wrap_content"
+            android:text="machineCategoryTextView"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:paddingLeft="10dp" />
+
+
+        <TextView
+            android:id="@+id/machineBrandTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="machineBrandTextView"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/machineReferenceTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="machineReferenceTextView"
+            android:textColor="@color/md_black_1000"
+            android:textSize="16sp"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:paddingLeft="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/md_white_1000"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/machineSerialNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No série"
+                android:textSize="16sp"
+                android:textColor="@color/md_black_1000"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp" />
+            <TextView
+                android:id="@+id/machineNumeroLevon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Levon"
+                android:textSize="14sp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:id="@+id/machinePurchaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date d'achat"
+                android:textSize="14sp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:id="@+id/machineInstallDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date d'installation"
+                android:textSize="14sp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/machineSerialNumberTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="@color/md_black_1000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp" />
+            <TextView
+                android:id="@+id/machineNumeroLevonTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/machinePurchaseDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/machineInstallDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

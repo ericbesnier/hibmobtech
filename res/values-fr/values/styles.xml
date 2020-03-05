@@ -1,0 +1,48 @@
+<resources>
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base"/>
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/md_deep_purple_800</item>
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/md_deep_purple_600</item>
+        <!-- colorAccent is used as the default value for colorControlActivated
+             which is used to tint widgets -->
+        <item name="colorAccent">@color/md_pink_A400</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--We will be using the toolbar so no need to show ActionBar-->
+        <item name="android:windowActionBar">false</item>
+        <!-- You can also updateCause colorControlNormal, colorControlActivated
+           colorControlHighlight and colorSwitchThumbNormal. -->
+        <item name="android:windowActionModeOverlay">true</item>
+    </style>
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="MyList" parent="MyMaterialTheme.Base">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:background">@color/md_white_1000</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+<!--    <style name="MyList" parent="MyMaterialTheme.Base">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:background">@color/md_purple_400</item>
+    </style>-->
+    <style name="MyText" parent="MyMaterialTheme.Base">
+        <item name="android:textSize">12dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceListItem</item>
+    </style>
+</resources>

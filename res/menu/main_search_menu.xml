@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:activity=".HibMobHome">
+<!--    <item android:id="@+id/siteItemId"
+        android:title="@string/main_menu_title_site"
+        />
+    <item android:id="@+id/equipmentItemId"
+        android:title="@string/main_menu_title_equipment"
+        />-->
+    <item
+        android:id="@+id/clearHistoryItemId"
+        android:orderInCategory="100"
+        android:title="@string/menu_clear_history"
+        app:showAsAction="never"
+        />
+
+<!--    <item android:id="@+id/searchItemId"
+        android:title="@string/action_search"
+        android:imeOptions="actionSearch"
+        android:icon="@drawable/abc_ic_ab_back_material"
+        android:inputType="text"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView" />-->
+    <item android:id="@+id/searchItemId"
+        android:title="@string/action_search"
+        android:imeOptions="actionSearch"
+        android:icon="@drawable/abc_ic_search_api_mtrl_alpha"
+        tools:ignore="PrivateResource"
+        android:inputType="text"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView" />
+</menu>
